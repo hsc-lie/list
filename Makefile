@@ -33,9 +33,9 @@ C_DEFINE_FLAGS=$(addprefix -D, $(C_DEFINES))
 
 #头文件路径
 INCLUDE_DIRS=\
-	list \
 	test \
-
+	list \
+	
 INCLUDE_FLAGS=$(addprefix -I, $(INCLUDE_DIRS))
 
 #源文件
