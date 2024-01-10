@@ -46,8 +46,8 @@ C_SRCS=\
 	main.c \
 	test/singly_list_test.c \
 	test/doubly_list_test.c \
-    list/singly_list.c \
-    list/doubly_list.c \
+	list/singly_list.c \
+	list/doubly_list.c \
 
 OBJS=$(addprefix $(OBJ_DIR)/, $(notdir $(C_SRCS:.c=.o)))
 
