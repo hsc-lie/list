@@ -17,6 +17,9 @@ DEBUG=1
 #设置编译器
 CC=gcc
 
+#设置C标准
+C_STD=-std=c99
+
 #优化等级
 ifeq ($(DEBUG), 0)
 	OPT=-O3
@@ -28,7 +31,7 @@ endif
 C_FLAGS=$(C_STD) $(OPT) -Wall -MMD -MP -fdiagnostics-color=always
 
 #C全局宏定义
-C_DEFINES:=
+C_DEFINES=
 C_DEFINE_FLAGS=$(addprefix -D, $(C_DEFINES))
 
 #头文件路径
